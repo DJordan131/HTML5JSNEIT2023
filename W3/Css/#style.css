@@ -1,13 +1,25 @@
-body,html{
+ @font-face{ 
+    font-family: CustomHeaderFont; 
+    src: url();
+ }
+ 
+ 
+ 
+ 
+ body,html{ 
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    margin: 0; 
+    background-color: blueviolet; 
+
 
 }
 
 #container{
     width: 1000px;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid black; 
+    background-color: white;
 }
 
 h1{
@@ -41,7 +53,9 @@ nav{
     height: 50px;
     border:1px solid blue;
     color:black;
-    background-color: aquamarine;
+    background-color: aquamarine; 
+    padding: 5px;
+    margin-left: 10px;
 }
 .btn:visited{
     color: black;
@@ -59,4 +73,18 @@ footer{
     color: hotpink;
     background-color: blueviolet;
 }
+ 
+   
+.section-text{ 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ 
+ 
+#section-header{ 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
 
+section{ 
+    padding: 10px; 
+    width: 980px;
+}
