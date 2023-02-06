@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title> 
+    <style>  
+    table,tr , td{ 
+        border: 1px outset black;
+    } 
+    table{ 
+        width: 500px;
+    } 
+    tbody td{ 
+        text-align: center;
+    }
+     
+     </style>
+</head>
+<body>
+    <h1>Table Example</h1> 
+    <table> 
+        <thead> 
+            <tr> 
+                <td>Year</td> 
+                <td>Model</td> 
+                <td>Make</td>
+            </tr>   
+        </thead> 
+        <tbody> 
+            <tr> 
+                <td>2011</td> 
+                <td>Jetta</td> 
+                <td>Volkwagen</td>
+            </tr> 
+            <tr> 
+                <td>2010</td> 
+                <td>A4</td> 
+                <td>Audi</td>
+            </tr> 
+            <tr> 
+                <td>1965</td> 
+                <td>Impala</td> 
+                <td>Cheveloet</td>
+            </tr>
+        </tbody> 
+        <tfoot> 
+            <form action="tables.html" method="GET"></form> 
+            <tr> 
+                <td>Select your favorite car</td>
+            </tr> 
+            <tr> 
+                <Td><label for="Car">Select your favorite here</label></Td>  
+                <td><input type="Radio" name="Car" value="2011 Volkswagen Jetta"></td>2011 Jetta 
+                <td><input type="Radio" name="Car" value="2015 BMW"></td>2015 BMW 
+                <td><input type="Radio" name="Car" value="1965 Chevloet"></td>1965 Chevloet
+            </tr>
+        </tfoot>
+    </table> 
+</body>
+</html>
