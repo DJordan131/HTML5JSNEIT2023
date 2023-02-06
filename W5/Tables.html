@@ -45,16 +45,37 @@
             </tr>
         </tbody> 
         <tfoot> 
-            <form action="tables.html" method="GET"></form> 
+            <form action="tables.html" method="post"></form> 
             <tr> 
                 <td>Select your favorite car</td>
             </tr> 
             <tr> 
                 <Td><label for="Car">Select your favorite here</label></Td>  
-                <td><input type="Radio" name="Car" value="2011 Volkswagen Jetta"></td>2011 Jetta 
-                <td><input type="Radio" name="Car" value="2015 BMW"></td>2015 BMW 
-                <td><input type="Radio" name="Car" value="1965 Chevloet"></td>1965 Chevloet
-            </tr>
+                <input type="Radio" name="Car" value="2011 Volkswagen Jetta">>2011 Jetta <br>
+                <input type="Radio" name="Car" value="2015 BMW">2015 BMW <br>
+                <input type="Radio" name="Car" value="1965 Chevloet">1965 Chevloet<br>
+            </tr> 
+            <tr> 
+                <td><label for="User name">Enter your name here:</label></td> 
+                <td> 
+                    <input type="text" name="firstname" placeholder="Enter First name"id="firstname">  
+                    <input type="text" name="lastname" placeholder="Enter Last name"id="lastname">  
+                </td>
+            </tr> 
+            <tr> 
+                <td> 
+                    <label for="Email">Enter email here:</label>
+                </td> 
+                <td> 
+                    <input type="email" name="Email" id="email"placeholder="Enter Email here">
+                </td> 
+                <td> 
+                    <label for="Submit">Click to sned yoir choice </label> 
+    
+                </td> 
+                <td><input type="submit" value="Sumbit Form"></td>
+            </tr> 
+            <td> 
         </tfoot>
     </table> 
 </body>
