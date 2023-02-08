@@ -1,82 +1,110 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Example</title> 
-    <style>  
-    table,tr , td{ 
-        border: 1px outset black;
-    } 
-    table{ 
-        width: 500px;
-    } 
-    tbody td{ 
-        text-align: center;
-    }
-     
-     </style>
+    <title>Table Example</title>
+    <style>
+        table,tr,td{
+            border: outset ;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+        }
+        tbody td{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Table Example</h1> 
-    <table> 
-        <thead> 
-            <tr> 
-                <td>Year</td> 
-                <td>Model</td> 
+    <h1>Table Example</h1>
+    <!--First start with table element-->
+    <table>
+        <thead>
+            <!--Defines table row-->
+            <tr>
+                <!--Defines Columns table data-->
+                <td>Year</td>
                 <td>Make</td>
-            </tr>   
-        </thead> 
-        <tbody> 
-            <tr> 
-                <td>2011</td> 
-                <td>Jetta</td> 
-                <td>Volkwagen</td>
-            </tr> 
-            <tr> 
-                <td>2010</td> 
-                <td>A4</td> 
-                <td>Audi</td>
-            </tr> 
-            <tr> 
-                <td>1965</td> 
-                <td>Impala</td> 
-                <td>Cheveloet</td>
+                <td>Model</td>
             </tr>
-        </tbody> 
-        <tfoot> 
-            <form action="tables.html" method="post"></form> 
-            <tr> 
-                <td>Select your favorite car</td>
-            </tr> 
-            <tr> 
-                <Td><label for="Car">Select your favorite here</label></Td>  
-                <input type="Radio" name="Car" value="2011 Volkswagen Jetta">>2011 Jetta <br>
-                <input type="Radio" name="Car" value="2015 BMW">2015 BMW <br>
-                <input type="Radio" name="Car" value="1965 Chevloet">1965 Chevloet<br>
-            </tr> 
-            <tr> 
-                <td><label for="User name">Enter your name here:</label></td> 
-                <td> 
-                    <input type="text" name="firstname" placeholder="Enter First name"id="firstname">  
-                    <input type="text" name="lastname" placeholder="Enter Last name"id="lastname">  
-                </td>
-            </tr> 
-            <tr> 
-                <td> 
-                    <label for="Email">Enter email here:</label>
-                </td> 
-                <td> 
-                    <input type="email" name="Email" id="email"placeholder="Enter Email here">
-                </td> 
-                <td> 
-                    <label for="Submit">Click to sned yoir choice </label> 
-    
-                </td> 
-                <td><input type="submit" value="Sumbit Form"></td>
-            </tr> 
-            <td> 
+        </thead>
+        <tbody>
+            <tr>
+                <td>2011</td>
+                <td>Volkswagen</td>
+                <td>Jetta</td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td>BMW</td>
+                <td>M4</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td>Porsche</td>
+                <td>GT3</td>
+            </tr>
+            <tr>
+                <td>2018</td>
+                <td>Honda</td>
+                <td>Accord</td>
+            </tr>
+            <tr>
+                <td>1965</td>
+                <td>Cheverolet</td>
+                <td>Impala</td>
+            </tr>
+            <tr>
+                <td>1999</td>
+                <td>Toyota</td>
+                <td>Supra Mk6</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <form action="formData.html" method="GET">
+                <tr>
+                    <td>Select your favorite car</td>
+                </tr>
+                <tr>
+                    <td><label for="car">Select your favorite here!</label></td>
+                    <td>
+                        <input type="radio" name="Car" value="2011 Volkswagen Jetta">2011 Volkswagen Jetta<br>
+                        <input type="radio" name="Car" value="2015 BMW M4">2014 BMW M4<br>
+                        <input type="radio" name="Car" value="2016 Porche GT3">2016 Porche GT3<br>
+                        <input type="radio" name="Car" value="2018 Honda Accord">2018 Honda Accord<br>
+                        <input type="radio" name="Car" value="1965 Cheverolet Impala">1965 Cheverolet Impala<br>
+                        <input type="radio" name="Car" value="1999 Toyota Supra">1999 Toyota Supra<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Username">Enter your name here</label></td>
+                    <td>
+                        <input type="text" name="firstname" placeholder="Enter first name" id="firstname" required>
+                        <input type="text" name="lastname" placeholder="Enter last name" id="lastname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Email">Enter email here</label>
+                    </td>
+                    <td>
+                        <input type="email" name="Email" id="email" placeholder="Enter Email here">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="submit">Click to send your choice</label>
+                    </td>
+                    <td>
+                        <input type="submit" value="Submit Form">
+                    </td>
+                </tr>
+
+            </form>
         </tfoot>
-    </table> 
+    </table>
 </body>
 </html>
