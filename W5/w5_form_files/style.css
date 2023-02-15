@@ -1,0 +1,15 @@
+
+table, tr, td{
+  border:1px solid black;
+} 
+ 
+table,tr,td{
+  border: outset ;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table{
+  width: 500px;
+}
+tbody td{
+  text-align: center;
+}
