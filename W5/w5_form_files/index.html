@@ -76,9 +76,15 @@
             </tr>
             <tr> 
                 <td>Drinks</td>
-                <td><label for="size">Size</label></td>
                 <td>
-                <input type="radio" name="size"  itemid="sm" itemid="md" itemid="lg" required> 
+                    <label for="size">Size</label>
+            <br>
+                    <label for="sm">small</label>
+                <input type="radio" name="size"  itemid="sm" required> 
+                <label for="md">medium</label>
+                <input type="radio" name="size"  itemid="md" required> 
+                <label for="lg">large</label>
+                <input type="radio" name="size"  itemid="lg" required> 
             </td>
             </tr>  
             <tr> 
@@ -92,27 +98,25 @@
            </tr>    
            <tr>  
             <td>Cake</td>
-            <td>  
-                <td><select for="cake">cake</label></td>  
-            </td>
-           </tr> 
-           <tr> 
-            <td> 
+         
                 <td> 
-                    <option >Choclate</option > 
-                    <option>Vanila</option> 
-                    <option>NA</option>
+                    <select name="cake" id="flavor">
+                        <option >Choclate</option > 
+                            <option>Vanila</option> 
+                            <option>NA</option>
+                    </select>
+                    
                 </td>
-            </td>
+            
            </tr> 
            <tr> 
                 <td><Strong>Decorations</Strong></td>
-           </tr> 
-           <tr> 
+        
             <td> 
-                <input type="color" name="colors" id="colors">  
+                
+                    <input type="color" name="colors" id="colors">  
+                
             </td>
-           </tr> 
            <tr> 
             <td>Addinal Comments</td> 
                                  <td> 
@@ -122,7 +126,9 @@
              <tr> 
                 <td> 
                     <label for="submit">Click to send your choice</label> 
-                    <input type="submit" value="Submit">
+                    <td> 
+                        <input type="submit" value="Submit">
+                    </td>
                 </td>
              </tr>
         </form>
