@@ -100,20 +100,26 @@
 
             //convert both hours and rate to Number() data types
             
+            var hours = hoursWorked = prompt("Please tell me how many hours you worked last week.", "Enter Hours worked here."); 
+            var rate = prompt("Please enter your hourly pay", "Enter your hourly pay here:"); 
             
-
             //NOTE: DO NOT MOVE ON UNTIL YOU ARE ABLE TO DISPLAY THE CORRECT VALUES! This is a practice in testing as you build! 
 
             //create gross, taxAmount, net variables and store corresponding data to them
             //use a tax percentage of 20% (.2)
-            
-
+            var gross = Number(rate) * Number(hoursWorked); 
+            var netPay = Number(gross) - Number(taxedAmount)
+            var taxed = prompt("Enter the tax precentage", "Enter tax precentage here: ex. (20% = .2)");  
+            var taxedAmount = Number(gross) * Number(taxed) 
             //console.log() all three processed values, rounded to the second decimal place
             console.log(.toFixed(2))
-
+            number.toFixed(2);
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
-            var finalMessage = ``
+            <br>  </br> 
+            var finalMessage = `Your name is  ${full}.\nYour hours worked is  ${hoursWorked} .\nYour hourly rate is ${rate}.`;
+
+
 
         
             //create a new var called 'info' and store the entire #info *HTML element* to it
@@ -124,15 +130,22 @@
 
             //edit the innerHTML of the #info element (now the 'info' js var) to hold the value of 'finalMessage'
 
-
+            innerHTML = finalMessage
 
             //edit the innerHTML of the #check element (now the 'check' js var) to hold a literal string with the following values: gross pay, tax amount, net pay. All three values should be rounded to the second decimal place.  Use <br> to break onto a new line for each value
-
-
-
+            console.log(.toFixed(2))
+            innerHTML = (gross) 
+            <br> </br>
+            console.log(.toFixed(2))
+            innerHTML = (taxedAmount) 
+            <br> </br> 
+            console.log(.toFixed(2))
+            innerHTML = (netPay)
+            <br> </br>
             //add a 'click' event listener to the #submit HTML element (HINT: this is the first step in the <script> )
             //when the #submit button is clicked, the submitNow function should run
-
+            var submit = document.querySelector("sumbit");
+            submit.addEventListener("click", dataPrompt);
         
             function submitNow(e)
             {
